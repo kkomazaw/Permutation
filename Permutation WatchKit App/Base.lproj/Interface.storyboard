@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Permutation_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <picker height="0.39000000000000001" alignment="left" focusStyle="stack" id="AVh-jg-GPd">
+                            <connections>
+                                <action selector="FirstPickerChanged:" destination="AgC-eL-Hgc" id="cL3-jX-qKr"/>
+                            </connections>
+                        </picker>
+                        <picker height="0.39000000000000001" alignment="left" focusStyle="stack" id="Hvy-SN-RGC">
+                            <connections>
+                                <action selector="SecondPickerChanged:" destination="AgC-eL-Hgc" id="bqr-45-iU9"/>
+                            </connections>
+                        </picker>
+                        <label width="1" height="14.5" alignment="left" verticalAlignment="bottom" text="0P0=" minimumScaleFactor="0.5" id="YMM-q9-ctJ"/>
+                        <label width="1" height="16.5" alignment="left" verticalAlignment="bottom" text="0C0=" minimumScaleFactor="0.5" id="QuF-sg-ykZ"/>
+                    </items>
+                    <connections>
+                        <outlet property="Cvalue" destination="QuF-sg-ykZ" id="5d0-rk-EoW"/>
+                        <outlet property="FirstPicker" destination="AVh-jg-GPd" id="1og-rL-S4z"/>
+                        <outlet property="Pvalue" destination="YMM-q9-ctJ" id="xaY-bR-Ral"/>
+                        <outlet property="SecondPicker" destination="Hvy-SN-RGC" id="bwG-J2-SPt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+    </scenes>
+</document>

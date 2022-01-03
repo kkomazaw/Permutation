@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		685890361C56401B00374CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685890351C56401B00374CB8 /* AppDelegate.swift */; };
+		685890381C56401B00374CB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685890371C56401B00374CB8 /* ViewController.swift */; };
+		6858903B1C56401B00374CB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685890391C56401B00374CB8 /* Main.storyboard */; };
+		6858903D1C56401B00374CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6858903C1C56401B00374CB8 /* Assets.xcassets */; };
+		685890401C56401B00374CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6858903E1C56401B00374CB8 /* LaunchScreen.storyboard */; };
+		685890451C56401B00374CB8 /* Permutation WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 685890441C56401B00374CB8 /* Permutation WatchKit App.app */; };
+		6858904B1C56401B00374CB8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685890491C56401B00374CB8 /* Interface.storyboard */; };
+		6858904D1C56401B00374CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6858904C1C56401B00374CB8 /* Assets.xcassets */; };
+		685890541C56401B00374CB8 /* Permutation WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 685890531C56401B00374CB8 /* Permutation WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6858905B1C56401B00374CB8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6858905A1C56401B00374CB8 /* InterfaceController.swift */; };
+		6858905D1C56401B00374CB8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6858905C1C56401B00374CB8 /* ExtensionDelegate.swift */; };
+		685890611C56401B00374CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685890601C56401B00374CB8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		685890461C56401B00374CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6858902A1C56401A00374CB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685890431C56401B00374CB8;
+			remoteInfo = "Permutation WatchKit App";
+		};
+		685890551C56401B00374CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6858902A1C56401A00374CB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685890521C56401B00374CB8;
+			remoteInfo = "Permutation WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		685890681C56401B00374CB8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				685890541C56401B00374CB8 /* Permutation WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6858906C1C56401B00374CB8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				685890451C56401B00374CB8 /* Permutation WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		685890321C56401B00374CB8 /* Permutation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Permutation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		685890351C56401B00374CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		685890371C56401B00374CB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6858903A1C56401B00374CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6858903C1C56401B00374CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6858903F1C56401B00374CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		685890411C56401B00374CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685890441C56401B00374CB8 /* Permutation WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Permutation WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6858904A1C56401B00374CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6858904C1C56401B00374CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6858904E1C56401B00374CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685890531C56401B00374CB8 /* Permutation WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Permutation WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		685890591C56401B00374CB8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6858905A1C56401B00374CB8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6858905C1C56401B00374CB8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		685890601C56401B00374CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		685890621C56401B00374CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6858902F1C56401B00374CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685890501C56401B00374CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		685890291C56401A00374CB8 = {
+			isa = PBXGroup;
+			children = (
+				685890341C56401B00374CB8 /* Permutation */,
+				685890481C56401B00374CB8 /* Permutation WatchKit App */,
+				685890571C56401B00374CB8 /* Permutation WatchKit Extension */,
+				685890331C56401B00374CB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		685890331C56401B00374CB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				685890321C56401B00374CB8 /* Permutation.app */,
+				685890441C56401B00374CB8 /* Permutation WatchKit App.app */,
+				685890531C56401B00374CB8 /* Permutation WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		685890341C56401B00374CB8 /* Permutation */ = {
+			isa = PBXGroup;
+			children = (
+				685890351C56401B00374CB8 /* AppDelegate.swift */,
+				685890371C56401B00374CB8 /* ViewController.swift */,
+				685890391C56401B00374CB8 /* Main.storyboard */,
+				6858903C1C56401B00374CB8 /* Assets.xcassets */,
+				6858903E1C56401B00374CB8 /* LaunchScreen.storyboard */,
+				685890411C56401B00374CB8 /* Info.plist */,
+			);
+			path = Permutation;
+			sourceTree = "<group>";
+		};
+		685890481C56401B00374CB8 /* Permutation WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				685890491C56401B00374CB8 /* Interface.storyboard */,
+				6858904C1C56401B00374CB8 /* Assets.xcassets */,
+				6858904E1C56401B00374CB8 /* Info.plist */,
+			);
+			path = "Permutation WatchKit App";
+			sourceTree = "<group>";
+		};
+		685890571C56401B00374CB8 /* Permutation WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6858905A1C56401B00374CB8 /* InterfaceController.swift */,
+				6858905C1C56401B00374CB8 /* ExtensionDelegate.swift */,
+				685890601C56401B00374CB8 /* Assets.xcassets */,
+				685890621C56401B00374CB8 /* Info.plist */,
+				685890581C56401B00374CB8 /* Supporting Files */,
+			);
+			path = "Permutation WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		685890581C56401B00374CB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				685890591C56401B00374CB8 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		685890311C56401B00374CB8 /* Permutation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6858906D1C56401B00374CB8 /* Build configuration list for PBXNativeTarget "Permutation" */;
+			buildPhases = (
+				6858902E1C56401B00374CB8 /* Sources */,
+				6858902F1C56401B00374CB8 /* Frameworks */,
+				685890301C56401B00374CB8 /* Resources */,
+				6858906C1C56401B00374CB8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				685890471C56401B00374CB8 /* PBXTargetDependency */,
+			);
+			name = Permutation;
+			productName = Permutation;
+			productReference = 685890321C56401B00374CB8 /* Permutation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		685890431C56401B00374CB8 /* Permutation WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 685890691C56401B00374CB8 /* Build configuration list for PBXNativeTarget "Permutation WatchKit App" */;
+			buildPhases = (
+				685890421C56401B00374CB8 /* Resources */,
+				685890681C56401B00374CB8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				685890561C56401B00374CB8 /* PBXTargetDependency */,
+			);
+			name = "Permutation WatchKit App";
+			productName = "Permutation WatchKit App";
+			productReference = 685890441C56401B00374CB8 /* Permutation WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		685890521C56401B00374CB8 /* Permutation WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 685890651C56401B00374CB8 /* Build configuration list for PBXNativeTarget "Permutation WatchKit Extension" */;
+			buildPhases = (
+				6858904F1C56401B00374CB8 /* Sources */,
+				685890501C56401B00374CB8 /* Frameworks */,
+				685890511C56401B00374CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Permutation WatchKit Extension";
+			productName = "Permutation WatchKit Extension";
+			productReference = 685890531C56401B00374CB8 /* Permutation WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6858902A1C56401A00374CB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Matsui Keiji";
+				TargetAttributes = {
+					685890311C56401B00374CB8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7GW64MW9FF;
+						LastSwiftMigration = 0900;
+					};
+					685890431C56401B00374CB8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7GW64MW9FF;
+						LastSwiftMigration = "";
+					};
+					685890521C56401B00374CB8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7GW64MW9FF;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = 6858902D1C56401A00374CB8 /* Build configuration list for PBXProject "Permutation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 685890291C56401A00374CB8;
+			productRefGroup = 685890331C56401B00374CB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				685890311C56401B00374CB8 /* Permutation */,
+				685890431C56401B00374CB8 /* Permutation WatchKit App */,
+				685890521C56401B00374CB8 /* Permutation WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		685890301C56401B00374CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				685890401C56401B00374CB8 /* LaunchScreen.storyboard in Resources */,
+				6858903D1C56401B00374CB8 /* Assets.xcassets in Resources */,
+				6858903B1C56401B00374CB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685890421C56401B00374CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6858904D1C56401B00374CB8 /* Assets.xcassets in Resources */,
+				6858904B1C56401B00374CB8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685890511C56401B00374CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				685890611C56401B00374CB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6858902E1C56401B00374CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				685890381C56401B00374CB8 /* ViewController.swift in Sources */,
+				685890361C56401B00374CB8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6858904F1C56401B00374CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6858905D1C56401B00374CB8 /* ExtensionDelegate.swift in Sources */,
+				6858905B1C56401B00374CB8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		685890471C56401B00374CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 685890431C56401B00374CB8 /* Permutation WatchKit App */;
+			targetProxy = 685890461C56401B00374CB8 /* PBXContainerItemProxy */;
+		};
+		685890561C56401B00374CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 685890521C56401B00374CB8 /* Permutation WatchKit Extension */;
+			targetProxy = 685890551C56401B00374CB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		685890391C56401B00374CB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6858903A1C56401B00374CB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6858903E1C56401B00374CB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6858903F1C56401B00374CB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		685890491C56401B00374CB8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6858904A1C56401B00374CB8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		685890631C56401B00374CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		685890641C56401B00374CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		685890661C56401B00374CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Permutation WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Permutation.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		685890671C56401B00374CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Permutation WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Permutation.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6858906A1C56401B00374CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Permutation_WatchKit_Extension;
+				INFOPLIST_FILE = "Permutation WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Permutation.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6858906B1C56401B00374CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Permutation_WatchKit_Extension;
+				INFOPLIST_FILE = "Permutation WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Permutation.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6858906E1C56401B00374CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Permutation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Permutation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		6858906F1C56401B00374CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Permutation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ofuna-Chuo-Hospital.Permutation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6858902D1C56401A00374CB8 /* Build configuration list for PBXProject "Permutation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685890631C56401B00374CB8 /* Debug */,
+				685890641C56401B00374CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685890651C56401B00374CB8 /* Build configuration list for PBXNativeTarget "Permutation WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685890661C56401B00374CB8 /* Debug */,
+				685890671C56401B00374CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685890691C56401B00374CB8 /* Build configuration list for PBXNativeTarget "Permutation WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6858906A1C56401B00374CB8 /* Debug */,
+				6858906B1C56401B00374CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6858906D1C56401B00374CB8 /* Build configuration list for PBXNativeTarget "Permutation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6858906E1C56401B00374CB8 /* Debug */,
+				6858906F1C56401B00374CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6858902A1C56401A00374CB8 /* Project object */;
+}
